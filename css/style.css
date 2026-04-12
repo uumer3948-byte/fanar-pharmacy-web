@@ -1,0 +1,244 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    }
+    
+    body{
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+    }
+    
+    #particles-js{
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:-3;
+    }
+    
+    .glow{
+    position:fixed;
+    width:700px;
+    height:700px;
+    filter:blur(200px);
+    opacity:.25;
+    z-index:-2;
+    }
+    
+    .glow1{
+    background:#22c55e;
+    top:-200px;
+    left:-200px;
+    }
+    
+    .glow2{
+    background:#9333ea;
+    bottom:-200px;
+    right:-200px;
+    }
+    
+    nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 10%;
+    position:fixed;
+    width:100%;
+    top:0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background:rgba(255,255,255,0.02);
+    border-bottom:1px solid rgba(255,255,255,0.05);
+    }
+    
+    .logo{
+    font-size:24px;
+    font-weight:600;
+    background:linear-gradient(90deg,#38bdf8,#22c55e);
+    -webkit-background-clip:text;
+    color:transparent;
+    }
+    
+    .hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+    }
+    
+    .hero h1{
+    font-size:80px;
+    background:linear-gradient(90deg,#38bdf8,#22c55e,#9333ea);
+    -webkit-background-clip:text;
+    color:transparent;
+    }
+    
+    .hero p{
+    margin-top:20px;
+    font-size:20px;
+    opacity:.8;
+    }
+    
+    .btn{
+    margin-top:40px;
+    padding:16px 45px;
+    font-size:16px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    background:linear-gradient(90deg,#38bdf8,#22c55e);
+    color:white;
+    font-weight:600;
+    transition:.3s;
+    }
+    
+    .btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px #38bdf8;
+    }
+    
+    .preview{
+    margin-top:80px;
+    perspective:1200px;
+    }
+    
+    .preview img{
+    width:650px;
+    border-radius:20px;
+    transform:rotateX(10deg) rotateY(-10deg);
+    box-shadow:0 40px 80px rgba(0,0,0,0.7);
+    }
+    
+    .features{
+    padding:120px 10%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:35px;
+    }
+    
+    .card{
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.05);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding:35px;
+    border-radius:20px;
+    transition:.4s;
+    }
+    
+    .card:hover{
+    transform:translateY(-10px);
+    border:1px solid rgba(56,189,248,0.4);
+    box-shadow:0 0 25px rgba(56,189,248,0.3);
+    }
+    
+    .card img{
+    width:60px;
+    margin-bottom:20px;
+    }
+    
+    .gallery{
+    padding:120px 10%;
+    text-align:center;
+    }
+    
+    .gallery h2{
+    font-size:40px;
+    margin-bottom:60px;
+    }
+    
+    .images{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    }
+    
+    .images img{
+    width:100%;
+    border-radius:20px;
+    transition:.4s;
+    }
+    
+    .images img:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px rgba(56,189,248,0.4);
+    }
+    
+    footer{
+    text-align:center;
+    padding:40px;
+    opacity:.6;
+    border-top:1px solid rgba(255,255,255,0.05);
+    }
+    /* --- Contact Form Styles --- */
+.contact-section {
+    max-width: 600px;
+    margin: 80px auto 50px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.glass-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.glass-form input, 
+.glass-form textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+.glass-form input:focus, 
+.glass-form textarea:focus {
+    outline: none;
+    border: 1px solid #4facfe;
+}
+
+.glass-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+/* Hero Preview Image Fix */
+.preview img {
+    max-width: 350px; /* Image ka size thoda control karne ke liye */
+    width: 100%;
+    border-radius: 30px; /* Harsh white corners ko round karne ke liye */
+    box-shadow: 0 10px 40px rgba(0, 240, 255, 0.3); /* Ek futuristic cyan glow */
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+
+.preview img:hover {
+    transform: translateY(-10px); /* Mouse le jane par thoda upar float karega */
+}
+/* Hero Section Overlap Fix */
+.hero {
+    padding-top: 150px !important; /* Yeh text ko navbar ke neeche push karega */
+}
+
+/* Agar sirf text ko push karna hai toh isko bhi add kar sakte ho */
+.hero h1 {
+    margin-top: 40px; 
+}
